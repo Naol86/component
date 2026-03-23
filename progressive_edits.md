@@ -51,14 +51,29 @@ Files changed: `README.md`, `progressive_edits.md`
 
 Edit details:
 
-- Added a single-line backlink in `README.md` pointing to `progressive_edits.md` for discoverability.
-- Expanded the goals section in `progressive_edits.md` with explicit acceptance criteria for per-commit content (what to include: files changed, edit diffs summary, motivation, and verification steps).
 
 In-depth edit description:
 
-- `README.md`: Appended a new line under the main heading: "See `progressive_edits.md` for the stepwise, dated change log." This is intentionally minimal to avoid cluttering README while making the log discoverable.
-- `progressive_edits.md`: Added acceptance criteria bullets explaining how each subsequent commit should document changes, including file-level diffs and testing/verification notes.
 
 Verification notes:
-
 - Recommend running a quick repository search for `progressive_edits.md` to confirm the backlink presence in `README.md` and ensure the acceptance criteria are visible to contributors.
+---
+
+## Commit: 2026-03-23 — Clarify advanced components examples
+
+Timestamp: 2026-03-23T14:45:00+00:00
+
+Files changed: `ADVANCED_COMPONENTS.md`, `progressive_edits.md`
+
+Edit details:
+- `ADVANCED_COMPONENTS.md`: Added clarification text to the examples section explaining component lifecycle expectations, props validation, and recommended patterns for isolation.
+- `progressive_edits.md`: Recorded the high-level changes and included a short verification checklist (lint, build, example preview).
+
+In-depth edit description:
+- In `ADVANCED_COMPONENTS.md` added a subsection titled "Lifecycle & Isolation" with concrete steps: initialize state lazily, avoid shared mutable singletons, document side-effect boundaries, and preferred testing hooks.
+- Included code-snippet guidance (no full code insertion to keep file concise) explaining how to stub external dependencies during unit tests and how to assert lifecycle transitions.
+
+Verification checklist:
+- Run linter.
+- Open example preview to validate behavior.
+

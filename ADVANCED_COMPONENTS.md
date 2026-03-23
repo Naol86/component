@@ -8,3 +8,14 @@ Modern UI frameworks are increasingly relying on Web Components—a suite of dif
 
 ## 3. Containerization and Orchestration
 In modern CBSD, a component is often packaged as a Docker container. Kubernetes serves as the ultimate Component Orchestrator, managing the lifecycle, scaling, and routing of these independent units across clusters.
+
+### Lifecycle & Isolation
+
+Best practices:
+- Initialize local state lazily to avoid unnecessary work at mount.
+- Avoid shared mutable singletons across components; prefer injected services or context providers with clear lifecycle.
+- Document side-effect boundaries and keep side-effects localized to effect hooks or service layers.
+
+Testing guidance:
+- Stub external dependencies when unit-testing component logic.
+- Use lifecycle hooks to assert transitions (mount -> update -> unmount) rather than relying solely on snapshot tests.
