@@ -21,3 +21,9 @@ Adopting CBSD brings profound benefits to enterprise software:
 1. **Independent Deployability:** A micro-component can be pushed to production without compiling the entire megabyte monolith.
 2. **Technological Heterogeneity:** Because components communicate over standard protocols (like REST or gRPC), one component can be written in Python while another uses Rust.
 3. **Granular Fault Tolerance:** If the "Email Notification" component crashes, the "Checkout" component can still process orders and queue the emails for later.
+
+## The CBSD Lifecycle
+Standard Software Development Life Cycles (SDLC) don't apply directly. CBSD introduces new critical phases:
+- **Component Qualification:** Assessing third-party or internal components for fitness, security, and performance.
+- **Component Adaptation:** Creating wrappers, adapters, or facades to ensure the component fits perfectly into the overall architecture without polluting it.
+- **System Assembly:** The actual wiring together of these disparate parts using dependency injection and middleware frameworks.
