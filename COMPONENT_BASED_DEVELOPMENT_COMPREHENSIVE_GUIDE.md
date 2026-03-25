@@ -128,3 +128,12 @@ The shift from traditional coding to Component-Based Software Development is ult
 For small, highly specialized, or extremely performance-sensitive applications (such as high-frequency trading algorithms or embedded systems), traditional customized development still reigns supreme.
 
 However, for enterprise-scale applications characterized by frequent requirement changes, large distributed teams, and the need for high availability, the CBSD model—manifested today through Microservices, Web Components, and Serverless architectures—is the indisputable standard. It replaces the fragility of monolithic codebases with the resilience of a mechanical, modular ecosystem.
+
+### Composition vs. Inheritance Patterns
+
+When designing components, prefer composition over inheritance unless there is a compelling, well-documented reason otherwise. Evaluate choices by asking:
+- Does composition improve testability and reduce shared mutable state?
+- Will composition make the component easier to reuse in different contexts?
+- Are there performance implications that justify a more coupled approach?
+
+Document the decision and trade-offs in the architecture notes to keep future reviewers informed.

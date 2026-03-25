@@ -77,3 +77,22 @@ Verification checklist:
 - Run linter.
 - Open example preview to validate behavior.
 
+---
+
+## Commit: 2026-03-25 — Guide: architectural decision clarity
+
+Timestamp: 2026-03-25T11:00:00+00:00
+
+Files changed: `COMPONENT_BASED_DEVELOPMENT_COMPREHENSIVE_GUIDE.md`, `progressive_edits.md`
+
+Edit details:
+- Clarified the architecture decision section to explicitly mention when to choose component composition vs. inheritance-like patterns, and how to evaluate trade-offs.
+- Updated `progressive_edits.md` to include a list of decision criteria used when making architectural choices.
+
+In-depth edit description:
+- `COMPONENT_BASED_DEVELOPMENT_COMPREHENSIVE_GUIDE.md`: Added a subsection "Composition vs. Inheritance Patterns" covering maintainability, testability, and composability trade-offs, with sample evaluation questions to guide architects.
+- `progressive_edits.md`: Recorded the change and linked to the new guide subsection for reviewers.
+
+Verification notes:
+- Ensure links between the guide and this log are functional and that the added guidance aligns with existing examples.
+
