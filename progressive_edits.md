@@ -96,3 +96,23 @@ In-depth edit description:
 Verification notes:
 - Ensure links between the guide and this log are functional and that the added guidance aligns with existing examples.
 
+---
+
+## Commit: 2026-03-27 — System integration pattern example
+
+Timestamp: 2026-03-27T16:20:00+00:00
+
+Files changed: `SYSTEM_INTEGRATION_PATTERNS.md`, `progressive_edits.md`
+
+Edit details:
+- Added a concrete integration pattern example (API Gateway + Message Bus) to `SYSTEM_INTEGRATION_PATTERNS.md` with guidance on idempotency and retry strategies.
+- In `progressive_edits.md` logged the new example and included testing notes for integration scenarios.
+
+In-depth edit description:
+- `SYSTEM_INTEGRATION_PATTERNS.md`: Added a subsection "API Gateway + Message Bus" with responsibilities for each pattern participant, recommended timeouts, recommended retry/backoff strategies, and idempotency keys for message handlers.
+- Included notes on observability: tracing headers propagation, correlation IDs, and useful metrics to capture (latency, retries, success rate).
+
+Verification checklist:
+- Run integration smoke tests against an example orchestration.
+- Verify correlation ID propagation across services in traces.
+
