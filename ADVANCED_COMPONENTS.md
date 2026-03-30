@@ -19,3 +19,15 @@ Best practices:
 Testing guidance:
 - Stub external dependencies when unit-testing component logic.
 - Use lifecycle hooks to assert transitions (mount -> update -> unmount) rather than relying solely on snapshot tests.
+
+Example effect pattern (illustrative placeholder):
+
+```javascript
+// Pseudocode: subscribe/unsubscribe pattern
+useEffect(() => {
+	const handle = externalService.subscribe(data => setState(data));
+	return () => externalService.unsubscribe(handle);
+}, [externalService]);
+```
+
+Explanation: ensure cleanup runs on unmount and when dependencies change; mock `externalService` during tests to assert subscribe/unsubscribe interactions.

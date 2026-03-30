@@ -116,3 +116,21 @@ Verification checklist:
 - Run integration smoke tests against an example orchestration.
 - Verify correlation ID propagation across services in traces.
 
+---
+
+## Commit: 2026-03-30 — Add code snippet guidance in advanced components
+
+Timestamp: 2026-03-30T08:00:00+00:00
+
+Files changed: `ADVANCED_COMPONENTS.md`, `progressive_edits.md`
+
+Edit details:
+- Inserted a small code-snippet placeholder in `ADVANCED_COMPONENTS.md` showing a recommended effect hook pattern and stub for dependency injection examples.
+- Documented the snippet's intent and how to adapt it to common frameworks.
+
+In-depth edit description:
+- The snippet demonstrates a safe effect pattern (subscribe/unsubscribe) and dependency injection via provider hooks, emphasizing predictable cleanup and testability.
+
+Verification notes:
+- Run unit tests that stub the provider to validate the lifecycle and cleanup behavior.
+
