@@ -5,3 +5,6 @@ Just as backend systems have been broken down into microservices, the frontend c
 
 ## 2. Web Components
 Modern UI frameworks are increasingly relying on Web Components—a suite of different technologies allowing you to create reusable custom elements that are framework-agnostic.
+
+## 3. Containerization and Orchestration
+In modern CBSD, a component is often packaged as a Docker container. Kubernetes serves as the ultimate Component Orchestrator, managing the lifecycle, scaling, and routing of these independent units across clusters.
