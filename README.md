@@ -5,6 +5,8 @@ Project README
 
 See [progressive_edits.md](progressive_edits.md) for a stepwise, dated change log created for historic commits and traceability.
 
+Cross-links: the `progressive_edits.md` file contains direct references into the main guides to make review and verification faster.
+
 ### Journey Overview
 
 This project tracks the evolution of software from monolithic structures to highly adaptable component architectures.

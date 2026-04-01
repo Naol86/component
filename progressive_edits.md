@@ -134,3 +134,21 @@ In-depth edit description:
 Verification notes:
 - Run unit tests that stub the provider to validate the lifecycle and cleanup behavior.
 
+---
+
+## Commit: 2026-04-01 — Editorial polish and cross-links
+
+Timestamp: 2026-04-01T10:00:00+00:00
+
+Files changed: `progressive_edits.md`, `README.md`
+
+Edit details:
+- Performed editorial polish across entries for clarity and added explicit cross-links between guide sections and examples.
+- Cleaned up formatting and ensured each commit entry contains: timestamp, files changed, edit details, in-depth description, and verification steps.
+
+In-depth edit description:
+- Rewrote several sentences to improve clarity and added a short "How to verify" checklist entry to each existing section.
+
+Verification notes:
+- Spot-check each guide file for spelling and link correctness.
+
