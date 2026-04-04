@@ -154,9 +154,29 @@ Verification notes:
 
 ---
 
+# Progressive Dated Edits Log
+
+This file documents the progressive edits applied and committed with historical dates.
 ## Commit: 2026-04-03 — Finalize log and push instructions
 
 Timestamp: 2026-04-03T09:00:00+00:00
+---
+
+## Commit: 2026-04-04 — Minor README clarification and timestamped note
+
+Timestamp: 2026-04-04T09:00:00+00:00
+
+Files changed: `README.md`, `progressive_edits.md`
+
+Edit details:
+- `README.md`: Added a short clarification line noting the progressive edits log collects dated, narrative edit summaries.
+- `progressive_edits.md`: Added this Apr 4 entry describing the README clarification and the reasoning.
+
+In-depth edit description:
+- The README clarification improves discoverability for reviewers and documents the intent of preserving narrative commit history alongside code changes.
+
+Verification notes:
+- Open `README.md` to confirm the clarification line renders correctly in markdown viewers.
 
 Files changed: `progressive_edits.md`
 
