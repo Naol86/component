@@ -178,6 +178,24 @@ In-depth edit description:
 Verification notes:
 - Open `README.md` to confirm the clarification line renders correctly in markdown viewers.
 
+---
+
+## Commit: 2026-04-05 — Expand testing guidance in advanced components
+
+Timestamp: 2026-04-05T09:30:00+00:00
+
+Files changed: `ADVANCED_COMPONENTS.md`, `progressive_edits.md`
+
+Edit details:
+- `ADVANCED_COMPONENTS.md`: Expanded testing guidance with a short section on mocking providers and asserting lifecycle interactions deterministically.
+- `progressive_edits.md`: Logged the addition and included a small verification checklist for unit tests.
+
+In-depth edit description:
+- Added explicit examples of how to mock injected services and how to structure tests to validate mount/update/unmount behavior without relying on timing-sensitive assertions.
+
+Verification notes:
+- Run unit tests that mock external providers and verify expected subscribe/unsubscribe calls.
+
 Files changed: `progressive_edits.md`
 
 Edit details:

@@ -31,3 +31,7 @@ useEffect(() => {
 ```
 
 Explanation: ensure cleanup runs on unmount and when dependencies change; mock `externalService` during tests to assert subscribe/unsubscribe interactions.
+
+Testing specifics:
+- Mock provider hooks or injected services by replacing them with lightweight test doubles that expose `subscribe`/`unsubscribe` spies.
+- Assert that `subscribe` is called on mount with expected arguments and `unsubscribe` is called on cleanup; avoid relying on timeouts in tests by triggering effects synchronously where the test runner supports it.
