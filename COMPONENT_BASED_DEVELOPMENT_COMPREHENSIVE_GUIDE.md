@@ -137,3 +137,7 @@ When designing components, prefer composition over inheritance unless there is a
 - Are there performance implications that justify a more coupled approach?
 
 Document the decision and trade-offs in the architecture notes to keep future reviewers informed.
+
+Editorial note (2026-04-06):
+
+The recent edits between 2026-03-16 and 2026-04-06 expanded guidance across examples, testing, and integration patterns. Reviewers should consult `ADVANCED_COMPONENTS.md` for lifecycle and test patterns, `SYSTEM_INTEGRATION_PATTERNS_EXTRA.md` for integration pattern addenda, and `progressive_edits.md` for per-commit narrative details.
