@@ -1,0 +1,81 @@
+.panel {
+  border: 1px solid var(--gray-alpha-200);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 720px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.fieldWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-geist-sans);
+  font-size: 13px;
+}
+
+.input {
+  border: 1px solid var(--gray-alpha-200);
+  border-radius: 8px;
+  height: 38px;
+  padding: 0 10px;
+  background: transparent;
+  color: inherit;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  border-radius: 8px;
+  height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--gray-alpha-200);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.primaryBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message {
+  font-family: var(--font-geist-mono);
+  font-size: 13px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--gray-alpha-100);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+@media (max-width: 700px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
